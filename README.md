@@ -2,7 +2,7 @@
 
 ## 🗒️ Implementaciones
 
-[Lua] • [Nim] • [HTML]
+[Lua](src/lua/hex2ansi.lua) • [Nim](src/nim/hex2ansi.nim) • HTML
 
 ## 🛡️ Licencia
 
