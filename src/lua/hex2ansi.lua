@@ -78,7 +78,7 @@ local function hexToAnsi(hex)
 end
 
 -- Example usage
-local hexColor = "#47A95E"
+local hexColor = "#bbbbbb"
 local ansiColor = hexToAnsi(hexColor)
 print(ansiColor)
 
