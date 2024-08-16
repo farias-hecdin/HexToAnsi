@@ -71,15 +71,23 @@ proc rgbToAnsi(r, g, b: int): int =
 
   return bestMatch + 16 # ANSI colors start at 16
 
-# Convert hex color to ANSI color
+# Convert hex color to ANSI color ---------------------------------------------
 proc hexToAnsi(hex: string, mode: int): string =
   let (r, g, b) = hexToRgb(hex)
   let ansiCode = rgbToAnsi(r, g, b)
   result = (if mode != 1: &"\e[38;5;{ansiCode}m" else: &"\e[48;5;{ansiCode}m")
 
-# Example usage
+# Foreground in compTime
+proc fg(hex: static string): string =
+  result = static(hexToAnsi(hex, 0))
+
+# Background in compTime
+proc bg(hex: static string): string =
+  result = static(hexToAnsi(hex, 1))
+
+# Example usage:
 # const hexColor = "#FFFF00"
 # const ansiColor = hexToAnsi(hexColor, 0)
 # echo ansiColor, "Hello world!"
 
-export hexToAnsi
+export hexToAnsi, fg, bg
