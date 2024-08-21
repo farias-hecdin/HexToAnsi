@@ -1,7 +1,12 @@
 # Documentación
 
 - [Documentación](#documentacin)
+  - [Instalación](#instalacin)
+  - [Uso](#uso)
   - [Procs](#procs)
+    - [`hexToAnsi`](#hextoansi)
+    - [`fg` y `bg`](#fg-y-bg)
+    - [`fgx` y `bgx`](#fgx-y-bgx)
 
 ## Instalación
 
