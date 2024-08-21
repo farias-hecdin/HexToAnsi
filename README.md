@@ -6,7 +6,7 @@ Este repositorio contiene un script diseñado para convertir colores hexadecimal
 
 ## 🗒️ Implementaciones
 
-[Lua](src/lua/hex2ansi.lua) • [Nim](src/nim/hex2ansi.nim) • HTML
+[Lua](src/lua/hex2ansi.lua) • [Nim](src/nim/README.md) • HTML
 
 ## 🛡️ Licencia
 
