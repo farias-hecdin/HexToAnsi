@@ -5,22 +5,39 @@
 
 ## Instalación
 
-```nim
-nimble install https://github.com/farias-hecdin/HexToAnsi
+```sh
+nimble install "https://github.com/farias-hecdin/HexToAnsi"
 ```
 
 ## Procs
 
+Convierte un color hexadecimal a un código de color ANSI.
+
+Parámetros:
+* `hex`: Código de color hexadecimal (por ejemplo, `#FF0000`)
+* `mode`: Modo de conversión (`0` foreground y `1` background).
+
 ```nim
-#-- Convert hex color to ANSI color
 proc hexToAnsi(hex: string, mode: int): string
+```
 
-#-- Foreground and background
+Obtener el color 'Foreground' o 'background' en tiempo de ejecución.
+
+```nim
+# Foreground
 proc fg(hex: string): string
-proc bg(hex: string): string
 
-#-- Foreground and background in compTime
+# Background
+proc bg(hex: string): string
+```
+
+Obtener el color 'foreground' o 'background' en tiempo de compilación.
+
+```nim
+# Foreground
 proc fgx(hex: static string): string
+
+# Background
 proc bgx(hex: static string): string
 ```
 
