@@ -1,6 +1,6 @@
 # Package
 
-version       = "1.0.0"
+version       = "1.2.0"
 author        = "Farias Hecdin"
 description   = "A tool to convert HEX color to ANSI color"
 license       = "MIT"
